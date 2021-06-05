@@ -1,7 +1,10 @@
 
 // Necesario para Windows
 #ifdef _WIN32
+// Especifica que se generará una libreria DLL
 #define LATINO_BUILD_AS_DLL
+// Indica que esta libreria dinamica es para latino
+#define LATINO_LIB
 #endif
 
 // incluir la cabecera de latino

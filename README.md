@@ -41,9 +41,18 @@ cd build
 cmake -G "Visual Studio 16 2019" -DCMAKE_BUILD_TYPE=Release ..\
 ```
 
-Abrir con visual studio 2019 y compilar la solucion latino-lib-ejemplo.sln
+Abrir con visual studio 2019 y compilar la solucion latino-lib-ejemplo.sln 
+generada en la carpeta build/
+
+Compilar el proyecto en modo Release.
+
 Para instalar la libreria abrir visual studio con permisos de administrador
-Generar el proyecto de INSTALL.vcxproj
+Generar el proyecto de INSTALL.vcxproj dando clic derecho sobre el proyecto y build
+o copiar la libreria .dll generada con este proyecto en la ruta de instalación
+de latino. 
+Por ejemplo:
+
+`C:/Program Files/Latino/bin`
 
 ### Uso de esta librería en código latino
 

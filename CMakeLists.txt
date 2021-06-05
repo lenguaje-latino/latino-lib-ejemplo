@@ -26,7 +26,7 @@ if(WIN32)
 
   # Enlazar
   include_directories(${LATINO_INCLUDE})
-  link_directories(${LATINO_LIBC})
+  link_directories(${LATINO_PATH})
 
   message(STATUS "TARGET_ARCH: ${TARGET_ARCH}")
   message(STATUS "LATINO_PATH: ${LATINO_PATH}")
@@ -44,7 +44,7 @@ target_link_libraries(latino-libejemplo latino)
 #Especifica las reglas que se ejecutarán en el momento de la instalación.
 # Especifica las reglas que se ejecutarán en el momento de la instalación.
 if(WIN32)
-  install(TARGETS latino-libejemplo DESTINATION ${LATINO_LIBC})
+  install(TARGETS latino-libejemplo DESTINATION ${LATINO_PATH})
 else()
   install(FILES liblatino-libejemplo.so DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)
 endif()
