@@ -1,0 +1,13 @@
+// incluye el modulo en latino
+incluir("libejemplo")
+
+// para invocarlo se pone el nombre del modulo punto y el nombre de la funcion
+escribir("-----------------------------")
+escribir("consumiendo libreria dinamica")
+escribir("-----------------------------")
+
+x = libejemplo.suma(1, 1.5)
+
+// imprime el valor de la suma
+escribir("la suma de 1 + 1.5 es:")
+escribir(x)
