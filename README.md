@@ -54,6 +54,19 @@ Por ejemplo:
 
 `C:/Program Files/Latino/bin`
 
+### MSYS
+
+Abrir un terminal de MSYS y correr lo siguiente.
+
+```
+pacman -S libreadline libreadline-devel
+git clone https://github.com/lenguaje-latino/latino-lib-ejemplo
+cd latino-lib-ejemplo
+cmake .
+make
+make install
+```
+
 ### Uso de esta librería en código latino
 
 ```
