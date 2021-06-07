@@ -34,6 +34,12 @@ if(WIN32)
   message(STATUS "LATINO_LIBC: ${LATINO_LIBC}")
 endif()
 
+# msys
+if(MSYS)
+  # Path en donde esta instalado latino
+  LINK_DIRECTORIES("/d/work/lenguaje-latino/latino/msys2")
+endif()
+
 #Agrega una biblioteca al proyecto utilizando los
 #archivos de origen especificados.
 add_library(latino-libejemplo SHARED src/latino-libejemplo.c)
